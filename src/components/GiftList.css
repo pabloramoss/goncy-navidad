@@ -1,0 +1,17 @@
+.Notebook img {
+  margin: 100px;
+}
+.Notebook {
+  position: relative;
+}
+.NotebookList{
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  /* border: solid 3px black; */
+  width: 400px;
+  height: 600px;
+}
+h1 {
+  text-align: center;
+}

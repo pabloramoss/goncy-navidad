@@ -1,10 +1,10 @@
+import './App.css';
 import GiftList from './components/GiftList';
 
 const App = function () {
   return (
     <div className="App">
-      <h1>Regalos</h1>
-      <GiftList />
+      <GiftList clasName="GiftList" />
     </div>
   );
 };

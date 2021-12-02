@@ -1,11 +1,16 @@
 import React from 'react';
+import './GiftList.css';
 
+const gifts = ['Mancuerna 10kg', 'Mancuerna 15kg', 'Mancuerna 20kg'];
 const GiftList = function () {
-  const gifts = ['Mancuerna 10kg', 'Mancuerna 15kg', 'Mancuerna 20kg'];
-  const giftList = gifts.map((gift) => <li>{gift}</li>);
+  const giftList = gifts.map((gift, index) => <li key={index}>{gift}</li>);
   return (
-    <div>
-      <ul>{giftList}</ul>
+    <div className="Notebook">
+      <img src="../../public/img-notebook.png" alt="" />
+      <div className="NotebookList">
+        <h1 className="ListItem">REGALOS</h1>
+        <ul>{giftList}</ul>
+      </div>
     </div>
   );
 };
